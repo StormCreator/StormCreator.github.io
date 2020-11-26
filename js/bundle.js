@@ -114,7 +114,7 @@ function animation(){
     });
     subtitles.forEach(item => {
         item.classList.add('wow', 'animate__animated', 'animate__fadeInUp');
-        item.style.setProperty('--animate-delay', '.5s');
+        item.style.setProperty('--animate-delay', '.3s');
         item.style.setProperty('--animate-duration', '1.2s');
     });
     {
