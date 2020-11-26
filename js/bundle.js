@@ -339,13 +339,13 @@ $(document).ready(function () {
     Object(_modules_hamburger__WEBPACK_IMPORTED_MODULE_0__["default"])();
     Object(_modules_coaches__WEBPACK_IMPORTED_MODULE_4__["default"])();
     Object(_modules_slider__WEBPACK_IMPORTED_MODULE_1__["default"])();
+    Object(_modules_animation__WEBPACK_IMPORTED_MODULE_2__["default"])();
+    Object(_modules_scrolling__WEBPACK_IMPORTED_MODULE_3__["default"])();
     new WOW({
         boxClass: 'wow',
         animateClass: 'animated',
         offset: 100
     }).init();
-    Object(_modules_animation__WEBPACK_IMPORTED_MODULE_2__["default"])();
-    Object(_modules_scrolling__WEBPACK_IMPORTED_MODULE_3__["default"])();
 });
 
 
