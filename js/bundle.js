@@ -90,38 +90,45 @@
 /*!*************************************!*\
   !*** ./src/js/modules/animation.js ***!
   \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// function animation(){
-//     const titles = document.querySelectorAll('.title'),
-//             subtitles = document.querySelectorAll('.subtitle'),
-//             services = document.querySelectorAll('.service');
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function animation(){
+    const titles = document.querySelectorAll('.title'),
+            subtitles = document.querySelectorAll('.subtitle'),
+            services = document.querySelectorAll('.service');
 
 
+           
 
-//     titles.forEach(item => {
-//         item.classList.add('wow', 'animate__animated', 'animate__fadeInUp');
-//         item.style.setProperty('--animate-duration', '1.2s');
+    titles.forEach(item => {
+        item.classList.add('wow');
+        setTimeout(() => {
+            item.classList.add('animate__animated', 'animate__fadeInUp');
+            item.style.setProperty('--animate-duration', '1.2s');
+        }, 0.5);
+        
 
-//     });
-//     subtitles.forEach(item => {
-//         item.classList.add('wow', 'animate__animated', 'animate__fadeInUp');
-//         item.style.setProperty('--animate-delay', '.5s');
-//         item.style.setProperty('--animate-duration', '1.2s');
-//     });
-//     {
-//         let duration = 1.2;
-//         services.forEach(service => {
-//             service.classList.add('wow', 'animate__animated', 'animate__fadeInUp');
-//             service.style.setProperty('--animate-duration', `${duration}s`);
-//             duration += 0.3;
-//         });
-//     }
+    });
+    // subtitles.forEach(item => {
+    //     item.classList.add('wow', 'animate__animated', 'animate__fadeInUp');
+    //     item.style.setProperty('--animate-delay', '.5s');
+    //     item.style.setProperty('--animate-duration', '1.2s');
+    // });
+    // {
+    //     let duration = 1.2;
+    //     services.forEach(service => {
+    //         service.classList.add('wow', 'animate__animated', 'animate__fadeInUp');
+    //         service.style.setProperty('--animate-duration', `${duration}s`);
+    //         duration += 0.3;
+    //     });
+    // }
   
-// }
+}
 
-// export default animation;
+/* harmony default export */ __webpack_exports__["default"] = (animation);
 
 /***/ }),
 
@@ -319,7 +326,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/hamburger */ "./src/js/modules/hamburger.js");
 /* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/slider */ "./src/js/modules/slider.js");
 /* harmony import */ var _modules_animation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/animation */ "./src/js/modules/animation.js");
-/* harmony import */ var _modules_animation__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_animation__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _modules_scrolling__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/scrolling */ "./src/js/modules/scrolling.js");
 /* harmony import */ var _modules_coaches__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/coaches */ "./src/js/modules/coaches.js");
 
@@ -338,7 +344,7 @@ $(document).ready(function () {
         animateClass: 'animated',
         offset: 200
     }).init();
-    // animation();
+    Object(_modules_animation__WEBPACK_IMPORTED_MODULE_2__["default"])();
     Object(_modules_scrolling__WEBPACK_IMPORTED_MODULE_3__["default"])();
 });
 

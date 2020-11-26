@@ -14,7 +14,7 @@ $(document).ready(function () {
         animateClass: 'animated',
         offset: 200
     }).init();
-    animation();
+    // animation();
     scrolling();
 });
 

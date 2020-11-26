@@ -4,28 +4,29 @@ function animation(){
             services = document.querySelectorAll('.service');
 
 
+    $('.title').addClass('wow animate__animated animate__fadeInUp');
+    $('.title').style.setProperty('--animate-delay', '.5s');
+    $('.title').style.setProperty('--animate-duration', '1.2s');
 
-    titles.forEach(item => {
-        item.classList.add('wow', 'animate__animated', 'animate__fadeInUp');
-        item.style.setProperty('--animate-duration', '1.2s');
-        item.style.setProperty('data-wow-offset', '300');
 
-    });
-    subtitles.forEach(item => {
-        item.classList.add('wow', 'animate__animated', 'animate__fadeInUp');
-        item.style.setProperty('--animate-delay', '.5s');
-        item.style.setProperty('--animate-duration', '1.2s');
-        item.style.setProperty('data-wow-offset', '300');
-    });
-    {
-        let duration = 1.2;
-        services.forEach(service => {
-            service.classList.add('wow', 'animate__animated', 'animate__fadeInUp');
-            service.style.setProperty('--animate-duration', `${duration}s`);
-            service.style.setProperty('data-wow-offset', '300');
-            duration += 0.3;
-        });
-    }
+    // titles.forEach(item => {
+    //     item.classList.add('wow', 'animate__animated', 'animate__fadeInUp');
+    //     item.style.setProperty('--animate-duration', '1.2s');
+
+    // });
+    // subtitles.forEach(item => {
+    //     item.classList.add('wow', 'animate__animated', 'animate__fadeInUp');
+    //     item.style.setProperty('--animate-delay', '.5s');
+    //     item.style.setProperty('--animate-duration', '1.2s');
+    // });
+    // {
+    //     let duration = 1.2;
+    //     services.forEach(service => {
+    //         service.classList.add('wow', 'animate__animated', 'animate__fadeInUp');
+    //         service.style.setProperty('--animate-duration', `${duration}s`);
+    //         duration += 0.3;
+    //     });
+    // }
   
 }
 
