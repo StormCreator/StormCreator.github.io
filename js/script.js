@@ -12,7 +12,7 @@ $(document).ready(function () {
     new WOW({
         boxClass: 'wow',
         animateClass: 'animated',
-        offset: 300
+        offset: 200
     }).init();
     animation();
     scrolling();
